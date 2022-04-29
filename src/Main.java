@@ -1,17 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        task1();
+        task2();
 
     }
-    public static void task1(){
-        int i =1;
-        while (i<11){
-            System.out.print(i++ + " ");
+    public static void task2(){
+        int i =5;
+        do {
+            System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет");
+            i+=7;
         }
-        System.out.println();
-        i=10;
-        for (;i>0;i--){
-            System.out.print(i + " ");
-        }
+        while (i<32);
     }
 }
