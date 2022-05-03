@@ -7,7 +7,19 @@ public class Main {
         //task4();
         //fibo();
         //matrix();
-        task6();
+        //task6();
+        task7();
+
+    }
+    public static void task7(){
+        int[] masError = {5, 4, 3, 2, 1};
+        System.out.println(Arrays.toString(masError));
+        for (int i = 0; i < 3; i++) {
+            int a = masError[i];
+            masError[i]=masError[masError.length-1-i];
+            masError[masError.length-1-i] = a;
+        }
+        System.out.println(Arrays.toString(masError));
 
     }
     public static void task6(){
