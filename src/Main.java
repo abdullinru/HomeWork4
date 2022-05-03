@@ -5,8 +5,26 @@ public class Main {
     public static void main(String[] args) {
         //task3();
         //task4();
-        fibo();
+        //fibo();
+        matrix();
 
+    }
+    public static void matrix(){
+        int[][] matrix = new int [3][3];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (i==j||i+j==2){
+                    matrix[i][j]=1;
+                }
+            }
+        }
+
+        for (int[] row : matrix) {
+            for (int column : row) {
+                System.out.print(column + " ");
+            }
+            System.out.println();
+        }
     }
     public static void fibo(){
         int[] fibo = new int[10];
