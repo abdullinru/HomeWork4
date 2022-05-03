@@ -1,10 +1,21 @@
 import java.time.LocalDate;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
         //task3();
-        task4();
+        //task4();
+        fibo();
 
+    }
+    public static void fibo(){
+        int[] fibo = new int[10];
+        fibo[0] = 0;
+        fibo[1] = 1;
+        for (int i = 2; i < 10; i++) {
+            fibo[i]=fibo[i-1]+fibo[i-2];
+        }
+        System.out.println(Arrays.toString(fibo));
     }
     public static void task4(){
         for (int i = 1; i < 30; i++) {
