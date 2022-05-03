@@ -6,8 +6,18 @@ public class Main {
         //task3();
         //task4();
         //fibo();
-        matrix();
+        //matrix();
+        task6();
 
+    }
+    public static void task6(){
+        int[] masError = {5, 4, 3, 2, 1};
+        int[] masTrue = new int[5];
+        for (int i = 0; i < 5; i++) {
+            masTrue[i]=masError[masError.length-1-i];
+        }
+        System.out.println(Arrays.toString(masError));
+        System.out.println(Arrays.toString(masTrue));
     }
     public static void matrix(){
         int[][] matrix = new int [3][3];
