@@ -8,8 +8,19 @@ public class Main {
         //fibo();
         //matrix();
         //task6();
-        task7();
+        //task7();
+        task8();
 
+    }
+    public static void task8(){
+        int[] mas = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
+        for (int i = 0; i < mas.length; i++) {
+            for (int j = 0; j < mas.length; j++) {
+                if (mas[i]+mas[j]==-2){
+                    System.out.println("сумма этих чисел равна -2: " + mas[i] + " + " + mas[j] + " = -2");
+                }
+            }
+        }
     }
     public static void task7(){
         int[] masError = {5, 4, 3, 2, 1};
